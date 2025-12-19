@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unidad Educativa Rafael Suárez Meneses</title>
+  <meta name="description" content="Unidad Educativa Rafael Suárez Meneses - Inicial, Básica Media y Superior. Ibarra, Imbabura, Ecuador." />
+  <style>
+    :root{
+      --brand:#004b87;
+      --accent:#f39c12;
+      --muted:#666;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#222;line-height:1.45}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    
+    /* Header & Nav */
+    header{background:linear-gradient(90deg,var(--brand),#0b6aa6);color:white;padding:28px 0;border-radius:10px}
+    .top{display:flex;align-items:center;gap:18px}
+    
+    /* Typography & Layout */
+    h1{margin:0;font-size:1.6rem}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(12,40,80,0.06)}
+    .lead{color:var(--muted);margin-top:10px}
+    
+    /* Components */
+    .cta{display:inline-block;margin-top:12px;background:var(--accent);color:#111;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .stats{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:120px;background:linear-gradient(180deg,#fff,#fafafa);padding:10px;border-radius:8px;text-align:center}
+    
+    /* Grid General */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    
+    /* ESTILOS GALERÍA */
+    .gallery-item { margin: 0; background: #fafafa; border-radius: 8px; overflow: hidden; border: 1px solid #eee; transition: box-shadow 0.3s; }
+    .gallery-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .gallery-item img { width: 100%; height: 180px; object-fit: cover; display: block; transition: transform 0.3s; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption { padding: 12px; font-size: 0.9rem; line-height: 1.3; }
+    .gallery-date { display: block; font-size: 0.75rem; color: var(--brand); margin-bottom: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    footer{margin-top:22px;padding:18px;text-align:center;color:var(--muted);font-size:0.95rem}
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin-bottom:6px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; }
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header style="
+  height: 350px;
+  background:
+      linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('img/banner-uersm.jpg') center/cover no-repeat;
+  color: white;
+  display:flex;
+  align-items:flex-end;
+  padding:30px 0;
+">
+    <div class="wrap">
+        <div style="display:flex; align-items:center; gap:18px;">
+            <div style="width:100px; height:100px; background: white; border-radius: 8px; padding: 5px;">
+                <img src="img/logo-uersm.png" alt="Logo UE Rafael Suarez"
+                     style="width:100%; height:100%; object-fit:contain; display:block;">
+            </div>
+            <div>
+                <h1 style="margin:0;">Unidad Educativa Rafael Suárez Meneses</h1>
+                <div class="lead" style="color:#dff; font-size:1.1rem;">
+                    Institución Educativa - Inicial, Básica Media y Básica Superior · Ibarra, Imbabura
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h2 id="about">Bienvenidos</h2>
+        <p class="lead">Somos la Unidad Educativa Rafael Suárez Meneses, comprometidos con la formación integral de niñas, niños y jóvenes de la comunidad de Ibarra. Fomentamos valores, deporte y excelencia académica.</p>
+
+        <div class="stats" aria-hidden="true">
+          <div class="stat">
+            <div style="font-weight:800;font-size:1.2rem">AMIE</div>
+            <div>10H00122</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:800;font-size:1.2rem">Estudiantes</div>
+            <div>~1600</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:800;font-size:1.2rem">Jornadas</div>
+            <div>Matutina y Vespertina</div>
+          </div>
+        </div>
+
+        <h3 id="servicios" style="margin-top:14px">Niveles que ofrecemos</h3>
+        <ul>
+          <li>Inicial I y II</li>
+          <li>Preparatoria</li>
+          <li>Básica Media</li>
+          <li>Básica Superior</li>
+        </ul>
+        <p style="margin-top:10px"></p>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Contacto rápido</h3>
+          <ul class="contact-list" id="contacto" aria-label="Información de contacto">
+            <li><strong>Dirección:</strong> Río Pastaza 6-40 (esquina Río Santiago y Río Jubones), San Francisco, Ibarra.</li>
+            <li><strong>Teléfono:</strong> +593 6-264-2263.</li>
+            <li><strong>Email:</strong> rafaelsuarez2012@hotmail.es. </li>
+            <li><strong>Horario de Secretaría:</strong><br>
+                Matutina: A partir de las 12:00 PM<br>
+                Vespertina: A partir de las 18:00 PM
+            </li>
+          </ul>
+          <a class="cta" href="https://www.facebook.com/uerafaelsuarez/?locale=es_LA" target="_blank" rel="noopener">Visitar Facebook</a>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Ubicación</h4>
+          <p class="lead" style="margin-bottom:8px">San Miguel de Ibarra, Imbabura, Ecuador.</p>
+          <iframe title="Mapa - UE Rafael Suárez Meneses"
+            src="https://www.google.com/maps?q=0.33492,-78.11718&z=16&output=embed"
+            width="100%" height="200" style="border:0;border-radius:8px"
+            ></iframe>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3 id="galeria">Galería de Actividades</h3>
+      <p class="lead">Momentos destacados de nuestro año lectivo. Revisa nuestro <a href="https://www.facebook.com/uerafaelsuarez/?locale=es_LA" target="_blank">Facebook</a> para ver más detalles.</p>
+
+      <div class="grid gallery">
+        
+        <figure class="gallery-item">
+          <img src="img/dia-internacional-migrante-uersm.jpg" alt="Día del Migrante" onerror="this.src='https://placehold.co/600x400/f39c12/000?text=Dia+Migrante';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">15 DIC</span>
+            <strong>Día del Migrante:</strong> Homenaje reflexivo realizado por los estudiantes del 3.º C sobre respeto, inclusión y empatía.
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/posesion-consejo-estudiantil-uersm.jpg" alt="Posesión Consejo Estudiantil" onerror="this.src='https://placehold.co/600x400/004b87/ffffff?text=Posesion+Consejo';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">05 DIC</span>
+            <strong>Consejo Estudiantil:</strong> Acto solemne de posesión donde los nuevos líderes estudiantiles asumieron con honor sus cargos.
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/capacitacion-bomberos-uersm.jpg" alt="Capacitación Docente" onerror="this.src='https://placehold.co/600x400/004b87/ffffff?text=Capacitacion';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">20 NOV</span>
+            <strong>Formación Continua:</strong> Nuestros docentes capacitándose en Primeros Auxilios con los Bomberos y prácticas de IA.
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/sufragio-uersm.jpg" alt="Votaciones Estudiantiles" onerror="this.src='https://placehold.co/600x400/004b87/ffffff?text=Votaciones';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">14 NOV</span>
+            <strong>Día de las Votaciones:</strong> Una verdadera fiesta cívica democrática donde los estudiantes eligieron a sus representantes.
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/dia-escudo-nacional.jpg" alt="Día del Escudo" onerror="this.src='https://placehold.co/600x400/004b87/ffffff?text=Dia+Escudo';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">28 OCT</span>
+            <strong>Día del Escudo:</strong> Estudiantes de 5°B y 8°B recordaron la historia de nuestro símbolo de unidad y soberanía.
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/dia-bandera-nacional.jpg" alt="Día de la Bandera" onerror="this.src='https://placehold.co/600x400/004b87/ffffff?text=Dia+Bandera';">
+          <figcaption class="gallery-caption">
+            <span class="gallery-date">22 SEP</span>
+            <strong>Homenaje a la Bandera:</strong> Momento cívico especial recordando nuestra identidad, con la participación de los 7° C y 10° C.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Boletines y noticias</h3>
+      <p class="lead">Información oficial para la comunidad educativa.</p>
+      <article style="margin-top:8px">
+        <strong>Comunicado Reciente:</strong> Se recuerda a los padres de familia respetar los horarios de atención de secretaría para una mejor organización.
+      </article>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© Unidad Educativa Rafael Suárez Meneses</div>
+        <div style="color:var(--muted)">AMIE: 10H00122 · Ibarra, Imbabura. <a href="https://www.facebook.com/uerafaelsuarez/?locale=es_LA" target="_blank" rel="noopener">Facebook</a></div>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
